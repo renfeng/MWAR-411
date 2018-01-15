@@ -83,17 +83,13 @@
 							</includes>
 						</resource>
 					</webResources>
+
+					<!-- works -->
+					<!--<warSourceExcludes>excluded/index.html,excluded.txt</warSourceExcludes>-->
+
 				</configuration>
 				<executions>
-					<execution>
-						<id>prepare-package</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>exploded</goal>
-						</goals>
-					</execution>
 
-					<!-- TODO not works -->
 					<execution>
 						<id>package</id>
 						<phase>package</phase>
@@ -101,6 +97,7 @@
 							<goal>war</goal>
 						</goals>
 						<configuration>
+							<!-- TODO not works -->
 							<warSourceExcludes>excluded/index.html,excluded.txt</warSourceExcludes>
 						</configuration>
 					</execution>

@@ -1,2 +1,3 @@
 target
-MWAR-411.iml
+*.iml
+.DS_Store
